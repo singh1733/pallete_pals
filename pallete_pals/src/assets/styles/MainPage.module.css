@@ -96,3 +96,9 @@ ul{
 li{
     cursor: pointer;;
 }
+
+.SlideShow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
