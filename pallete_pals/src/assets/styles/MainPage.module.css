@@ -82,8 +82,17 @@ body {
 }
 
 
-.MainPage{
-    display: grid;
-    grid-template-columns: 1fr repeat(4,auto);
+.Nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
     gap: 20px;
+    cursor: pointer;;
+}
+
+li{
+    cursor: pointer;;
 }

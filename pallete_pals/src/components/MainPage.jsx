@@ -1,21 +1,52 @@
 import { Link } from "react-scroll";
-import styles from "./MainPage.module.css";
+import styles from "../assets/styles/MainPage.module.css";
 
 const Home = () => {
   return (
-    <>
-      <div className={styles.MainPage}>
+    <div className={styles.Root}>
+      <div className={styles.Nav}>
         <h1>Pallette Pals</h1>
-        <h1>About</h1>
-        <h1>Events</h1>
-        <h1>Gallery</h1>
-        <h1>Contact</h1>
+        <ul>
+          <li>
+            <Link to="about" smooth={true} duration={500}>
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link to="events" smooth={true} duration={500}>
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link to="gallery" smooth={true} duration={500}>
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact us
+            </Link>
+          </li>
+        </ul>
       </div>
-      <div>Slide Show</div>
-      <div>About Us</div>
-      <div>Events</div>
-      <div>Contact Us</div>
-    </>
+      <div className={styles.SlideShow}>
+        <button> &lt; </button>
+        <div>Slide Show</div>
+        <button> &gt; </button>
+      </div>
+      <div className={styles.About} id="about">
+        About Us
+      </div>
+      <div className={styles.Events} id="events">
+        Events
+      </div>
+      <div className={styles.Events} id="gallery">
+        Gallery
+      </div>
+      <div className={styles.Contact} id="contact">
+        Contact Us
+      </div>
+    </div>
   );
 };
 
