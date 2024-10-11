@@ -150,15 +150,11 @@ li {
 }
 
 .About {
-    background-image: url("../images/paint.jpg");
-    background-size: cover;
-    background-position: bottom;
     font-size: 40px;
     color: black;
     font-weight: bold;
     padding: 20px;
 }
-
 
 .About h2 {
 }
@@ -166,12 +162,22 @@ li {
   font-size: 30px;
 }
 
+.Events {
 
+}
 .Events img {
   width: 400px;
   object-fit: cover;
   object-position: center;
   padding: 20px;
+}
+
+.AboutAndEvents{
+    background-image: url("../images/paint.jpg");
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
 
 .Gallery {
@@ -180,10 +186,12 @@ li {
   grid-template-rows: repeat(4, 200);
 
   gap: 10px;
-  width: 95vw;
+  width: 90vw;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
+  font-size: 40px;
+
 }
 
 .Gallery img {
@@ -191,4 +199,20 @@ li {
   height: 100%;
   border-radius: 10%;
   width: 100%s;
+}
+
+.GalleryDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Gallery button{
+    border: 2px solid black;
+    padding: 5px 25px;
+    border-radius: 10px;
+    grid-column: span 4;
 }

@@ -11,21 +11,23 @@ const Home = () => {
     <div className={styles.Root}>
       <Nav />
       <Slideshow />
-      <div className={styles.About} id="about">
-        <h2>About Us</h2>
-        <p>
-          The purpose of this club is to provide a service that integrates Ohio
-          State students with individuals with developmental disabilities and
-          their families. Student volunteers will collaborate to administer a
-          program that supports and empowers the creativity of individuals with
-          developmental disabilities by hosting painting nights.
-        </p>
+      <div className={styles.AboutAndEvents}>
+        <div className={styles.About} id="about">
+          <h2>About Us</h2>
+          <p>
+            The purpose of this club is to provide a service that integrates
+            Ohio State students with individuals with developmental disabilities
+            and their families. Student volunteers will collaborate to
+            administer a program that supports and empowers the creativity of
+            individuals with developmental disabilities by hosting painting
+            nights.
+          </p>
+        </div>
+        <div className={styles.Events} id="events">
+          <img src={img1} alt={`Event flier`} />
+        </div>
       </div>
-      
-      <div className={styles.Events} id="events">
-        <h2>Events</h2>
-        <img src={img1} alt={`Event flier`} />
-      </div>
+
       <div className={styles.Gallery} id="gallery">
         <Gallery />
       </div>
