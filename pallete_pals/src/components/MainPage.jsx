@@ -21,6 +21,7 @@ const Home = () => {
           developmental disabilities by hosting painting nights.
         </p>
       </div>
+      
       <div className={styles.Events} id="events">
         <h2>Events</h2>
         <img src={img1} alt={`Event flier`} />

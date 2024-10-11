@@ -52,19 +52,9 @@ const Slideshow = () => {
     return () => clearInterval(interval); // Clean up interval on component unmount
   }, [images]);
 
-  const goToNext = () => {
-    setCurIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const goToPrevious = () => {
-    setCurIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
-
   return (
     <div className={styles.Slideshow}>
-      <button onClick={goToPrevious}>&lt;</button>
       <img src={images[curIndex]} alt={`Slide ${curIndex + 1}`} />
-      <button onClick={goToNext}>&gt;</button>
     </div>
   );
 };

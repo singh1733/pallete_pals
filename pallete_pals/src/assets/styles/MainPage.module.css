@@ -84,25 +84,41 @@ button {
   font-style: normal;
 }
 
+@font-face {
+    font-family: "RidayParcia";
+    src: url("../fonts/Ridayparcia-JRgqn.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
-  background-color: #e8e2de;
-  font-family:'AvenirNextLTPro', sans-serif;
+  background-color: white;
+  font-family: "AvenirNextLTPro", sans-serif;
+
+  color: black;
+
 }
 
 .Nav {
   display: grid;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto 1fr;
   justify-content: end;
   height: 50px;
-  font-size: 15px;
-  color: white;
-  background-color: #ff2400;
+  font-size: 25px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  padding: 40px;
+  gap: 30px;
+  position: fixed;
+  width: 100vw;
+  background-color: white;
 }
 
-.Nav img {
-  width: auto;
-  height: 50px;
-  border-radius: 40%;
+.Nav h1{
+    font-family: "RidayParcia", sans-serif;
+    font-size: 80px;
+    font-weight:100;
 }
 
 ul {
@@ -114,14 +130,15 @@ ul {
 
 li {
   cursor: pointer;
+  font-size: 30px;
 }
 
 .Slideshow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   width: calc(100vw-20px);
+  padding-top: 80px;
 }
 
 .Slideshow img {
@@ -130,8 +147,25 @@ li {
   max-height: 400px;
   object-fit: cover;
   object-position: center;
-  padding: 20px;
 }
+
+.About {
+    background-image: url("../images/paint.jpg");
+    background-size: cover;
+    background-position: bottom;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+.About h2 {
+}
+.About p {
+  font-size: 30px;
+}
+
 
 .Events img {
   width: 400px;
