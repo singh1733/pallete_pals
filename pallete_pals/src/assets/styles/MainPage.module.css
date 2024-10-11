@@ -79,6 +79,7 @@ button {
 
 body {
   padding: 20px;
+  background-color: #E8E2DE;
 }
 
 
@@ -97,8 +98,25 @@ li{
     cursor: pointer;;
 }
 
-.SlideShow{
+.Slideshow{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+
+.Slideshow img{
+    width: 100vw;
+    max-height: 400px;
+    object-fit: cover; 
+    object-position: center; 
+    padding: 20px;
+    
+}
+
+.Events img{
+    width: 400px;
+    object-fit: cover; 
+    object-position: center; 
+    padding: 20px;
 }

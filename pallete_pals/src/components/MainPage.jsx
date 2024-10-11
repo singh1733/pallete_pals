@@ -1,8 +1,9 @@
 import styles from "../assets/styles/MainPage.module.css";
 import Nav from "./Nav";
 import Slideshow from "./Slideshow";
+import Gallery from "./Gallery";
 
-
+import img1 from "../assets/images/IMG_2901.jpeg";
 
 const Home = () => {
   return (
@@ -10,16 +11,24 @@ const Home = () => {
       <Nav />
       <Slideshow />
       <div className={styles.About} id="about">
-        About Us
+        <h2>About Us</h2>
+        <p>
+          The purpose of this club is to provide a service that integrates Ohio
+          State students with individuals with developmental disabilities and
+          their families. Student volunteers will collaborate to administer a
+          program that supports and empowers the creativity of individuals with
+          developmental disabilities by hosting painting nights.
+        </p>
       </div>
       <div className={styles.Events} id="events">
-        Events
+        <h2>Events</h2>
+        <img src={img1} alt={`Event flier`} />
       </div>
-      <div className={styles.Events} id="gallery">
-        Gallery
+      <div className={styles.Gallery} id="gallery">
+        <Gallery />
       </div>
       <div className={styles.Contact} id="contact">
-        Contact Us
+        <h2>Contact Us</h2>
       </div>
     </div>
   );

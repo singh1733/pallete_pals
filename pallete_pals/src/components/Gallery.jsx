@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import styles from "../assets/styles/MainPage.module.css";
+import { useState, useEffect } from "react";
 import img1 from "../assets/images/IMG_2886.jpeg";
 import img2 from "../assets/images/IMG_2887.jpeg";
 import img3 from "../assets/images/IMG_2888.jpeg";
@@ -20,8 +20,7 @@ import img19 from "../assets/images/IMG_2904.jpeg";
 import img20 from "../assets/images/IMG_2905.jpeg";
 import img0 from "../assets/images/IMG_2906.jpeg";
 
-const Slideshow = () => {
-  const [curIndex, setCurIndex] = useState(0);
+const Gallery = () => {
   const images = [
     img0,
     img1,
@@ -44,29 +43,30 @@ const Slideshow = () => {
     img20,
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+  const [load, setLoad] = useState(false);
 
-    return () => clearInterval(interval); // Clean up interval on component unmount
-  }, [images]);
-
-  const goToNext = () => {
-    setCurIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  const goToPrevious = () => {
-    setCurIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  const loadSetter = () => {
+    setLoad((prev) => !prev);
   };
 
   return (
     <div className={styles.Slideshow}>
-      <button onClick={goToPrevious}>&lt;</button>
-      <img src={images[curIndex]} alt={`Slide ${curIndex + 1}`} />
-      <button onClick={goToNext}>&gt;</button>
+      {load
+        ? images.map((image, index) => (
+            <img key={index} src={image} alt={`Image ${index + 1}`} />
+          ))
+        : images
+            .slice(0, 6)
+            .map((image, index) => (
+              <img key={index} src={image} alt={`Image ${index + 1}`} />
+            ))}
+      {load ? (
+        <button onClick={loadSetter}>Hide</button>
+      ) : (
+        <button onClick={loadSetter}>Load More</button>
+      )}
     </div>
   );
 };
 
-export default Slideshow;
+export default Gallery;
