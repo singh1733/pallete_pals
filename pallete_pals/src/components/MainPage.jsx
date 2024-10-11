@@ -22,6 +22,13 @@ const Home = () => {
             individuals with developmental disabilities by hosting painting
             nights.
           </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSec3E6Df6Weh-OUx--5PjNmDdvU4cdeDRmOwzv-Da2CidbJvQ/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here to sign up!
+          </a>
         </div>
         <div className={styles.Events} id="events">
           <img src={img1} alt={`Event flier`} />
