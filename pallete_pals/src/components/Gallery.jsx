@@ -1,5 +1,5 @@
 import styles from "../assets/styles/MainPage.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import img1 from "../assets/images/IMG_2886.jpeg";
 import img2 from "../assets/images/IMG_2887.jpeg";
 import img3 from "../assets/images/IMG_2888.jpeg";

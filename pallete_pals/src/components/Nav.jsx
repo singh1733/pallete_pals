@@ -1,10 +1,14 @@
 import styles from "../assets/styles/MainPage.module.css";
 import { Link } from "react-scroll";
+import logo from "../assets/images/logo.jpg";
 
-const Nav = () => {
+function Nav() {
   return (
     <div className={styles.Nav}>
-      <h1>Pallette Pals</h1>
+      <img src={logo} alt="logo"></img>
+      <h1>
+        Pallette Pals
+      </h1>
       <ul>
         <li>
           <Link to="about" smooth={true} duration={500}>
@@ -29,6 +33,6 @@ const Nav = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default Nav;

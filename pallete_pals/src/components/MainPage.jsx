@@ -2,7 +2,7 @@ import styles from "../assets/styles/MainPage.module.css";
 import Nav from "./Nav";
 import Slideshow from "./Slideshow";
 import Gallery from "./Gallery";
-import Contact from "./Contact"
+import Contact from "./Contact";
 
 import img1 from "../assets/images/IMG_2901.jpeg";
 
