@@ -103,6 +103,7 @@ li{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    width: calc(100vw-20px);
 }
 
 .Slideshow img{
@@ -119,4 +120,23 @@ li{
     object-fit: cover; 
     object-position: center; 
     padding: 20px;
+}
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200);
+
+    gap: 10px;
+    width: 95vw;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.Gallery img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10%;
+    width: 100%s;
 }

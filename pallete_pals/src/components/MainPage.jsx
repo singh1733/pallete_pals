@@ -2,6 +2,7 @@ import styles from "../assets/styles/MainPage.module.css";
 import Nav from "./Nav";
 import Slideshow from "./Slideshow";
 import Gallery from "./Gallery";
+import Contact from "./Contact"
 
 import img1 from "../assets/images/IMG_2901.jpeg";
 
@@ -28,7 +29,7 @@ const Home = () => {
         <Gallery />
       </div>
       <div className={styles.Contact} id="contact">
-        <h2>Contact Us</h2>
+        <Contact />
       </div>
     </div>
   );

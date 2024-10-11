@@ -50,21 +50,24 @@ const Gallery = () => {
   };
 
   return (
-    <div className={styles.Slideshow}>
-      {load
-        ? images.map((image, index) => (
-            <img key={index} src={image} alt={`Image ${index + 1}`} />
-          ))
-        : images
-            .slice(0, 6)
-            .map((image, index) => (
+    <div className={styles.GalleryDiv}>
+      <h2>Gallery</h2>
+      <div className={styles.Gallery}>
+        {load
+          ? images.map((image, index) => (
               <img key={index} src={image} alt={`Image ${index + 1}`} />
-            ))}
-      {load ? (
-        <button onClick={loadSetter}>Hide</button>
-      ) : (
-        <button onClick={loadSetter}>Load More</button>
-      )}
+            ))
+          : images
+              .slice(0, 8)
+              .map((image, index) => (
+                <img key={index} src={image} alt={`Image ${index + 1}`} />
+              ))}
+        {load ? (
+          <button onClick={loadSetter}>Hide</button>
+        ) : (
+          <button onClick={loadSetter}>Load More</button>
+        )}
+      </div>
     </div>
   );
 };
