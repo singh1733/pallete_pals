@@ -15,7 +15,7 @@ import img13 from "../assets/images/IMG_2898.jpeg";
 import img14 from "../assets/images/IMG_2899.jpeg";
 import img15 from "../assets/images/IMG_2900.jpeg";
 import img17 from "../assets/images/IMG_2902.jpeg";
-import img18 from "../assets/images/IMG_2903.jpeg";
+import img18 from "../assets/images/IMG_2903.jpg";
 import img19 from "../assets/images/IMG_2904.jpeg";
 import img20 from "../assets/images/IMG_2905.jpeg";
 import img0 from "../assets/images/IMG_2906.jpeg";

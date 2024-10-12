@@ -1,4 +1,4 @@
-import insta from "../assets/images/insta.png";
+import insta from "../assets/images/insta2.png";
 import logo from "../assets/images/logo.jpg";
 import styles from "../assets/styles/MainPage.module.css";
 

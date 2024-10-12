@@ -4,9 +4,7 @@ import { Link } from "react-scroll";
 function Nav() {
   return (
     <div className={styles.Nav}>
-      <h1>
-        Pallette Pals
-      </h1>
+      <h1>Palette Pals</h1>
       <ul>
         <li>
           <Link to="about" smooth={true} duration={500} offset={-70}>
