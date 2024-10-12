@@ -191,7 +191,7 @@ li {
 
 .Gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
 
   gap: 1vw;
   width: 90vw;
@@ -203,7 +203,7 @@ li {
 
 .Gallery img {
   object-fit: cover;
-  height: 40vh;
+  height: auto;
   border-radius: 10%;
   width: 40vw;
 }
