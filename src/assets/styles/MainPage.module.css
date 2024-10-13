@@ -135,6 +135,20 @@ li {
   font-size: 2.5vw;
 }
 
+@media (max-width: 600px) {
+  .Nav h1 {
+    font-size: 0.7rem;
+  }
+
+  li {
+    font-size: 0.4rem;
+  }
+
+  .Nav {
+    height: 0.7rem;
+  }
+}
+
 .Slideshow {
   display: flex;
   align-items: center;
@@ -157,6 +171,14 @@ li {
   padding: 0.1em;
   width: 40%;
   height: 100%;
+  min-width: 300px;
+  min-height: auto;
+}
+
+@media (max-width: 600px) {
+  .Slideshow {
+    height: 6em;
+  }
 }
 
 .About {
@@ -176,11 +198,12 @@ li {
 .Events {
 }
 .Events img {
-  width: 28vw;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   padding: 2vw;
   border-radius: 4vw;
+  margin: 0 auto;
 }
 
 .AboutAndEvents {
@@ -188,25 +211,45 @@ li {
   display: grid;
   color: white;
   grid-template-columns: 3fr 2fr;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .AboutAndEvents {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .Events img {
+    width: 60%;
+  }
+
+  .About {
+    font-size: 4vw;
+  }
+  .About p {
+    font-size: 3vw;
+  }
 }
 
 .Gallery {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
   gap: 1vw;
   width: 90vw;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
-  font-size: 3vw;
 }
 
 .Gallery img {
   object-fit: cover;
   height: auto;
   border-radius: 10%;
-  width: 40vw;
+  width: 100%;
 }
 
 .GalleryDiv {
@@ -216,6 +259,7 @@ li {
   align-content: center;
   justify-content: center;
   text-align: center;
+  font-size: 3vw;
 }
 
 .Gallery button {
@@ -230,6 +274,23 @@ li {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .Gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .Gallery button {
+    grid-column: span 3;
+  }
+
+  .Gallery img {
+    object-fit: cover;
+    height: auto;
+    border-radius: 10%;
+    width: 100%;
+  }
+}
+
 .Gallery button:hover {
   background-color: #ba0c2f;
   color: white;
@@ -242,11 +303,12 @@ li {
   grid-template-columns: auto 1fr;
   grid-template-rows: auto auto auto 1fr;
   padding: 0.1em;
-  gap: 0.1em;
   color: white;
   align-items: center;
   justify-content: center;
   height: 1.5em;
+  row-gap: .01em;
+  
 }
 
 .logo {
@@ -254,6 +316,7 @@ li {
   height: 1.2em;
   grid-row: span 4; /* Logo spans across all three rows */
   border-radius: 1vw;
+  margin-right: .1em;
 }
 
 .insta {
@@ -265,8 +328,8 @@ li {
 
 .Contact p,
 .Contact a {
-  font-size: 0.1em;
-  align-self: center; /* Center align the first paragraph in the second column */
+  font-size: 0.15em;
+  align-self: center;
   margin: 0;
   padding: 0;
 }
@@ -277,6 +340,35 @@ li {
 
 .Contact a {
   font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .Contact {
+    height: 2.5em;
+    
+  }
+
+  .logo {
+    width: 2em;
+    height: 2em;
+    grid-row: span 4; /* Logo spans across all three rows */
+    border-radius: 1vw;
+    margin-right: .1em;
+  }
+
+  .Contact h2 {
+    font-size: 4vw;
+  }
+
+  .Contact p,
+  .Contact a {
+    font-size: 0.2em;
+  }
+
+  .insta {
+    width: 3.5em;
+    height: 3.5em;
+  }
 }
 
 li {
