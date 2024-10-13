@@ -179,6 +179,10 @@ li {
   .Slideshow {
     height: 6em;
   }
+
+  .Slideshow img{
+    margin-top: .1em;
+  }
 }
 
 .About {
