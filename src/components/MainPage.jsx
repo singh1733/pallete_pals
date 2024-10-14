@@ -31,6 +31,7 @@ const Home = () => {
           </a>
         </div>
         <div className={styles.Events} id="events">
+          <h2>Event Flier</h2>
           <img src={img1} alt={`Event flier`} />
         </div>
       </div>

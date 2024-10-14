@@ -200,12 +200,16 @@ li {
 }
 
 .Events {
+  font-size: 3vw;
+  text-align: center;
+  
 }
 .Events img {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
   object-position: center;
   padding: 2vw;
+  padding-top: 0;
   border-radius: 4vw;
   margin: 0 auto;
 }
@@ -225,6 +229,9 @@ li {
   .AboutAndEvents {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+  }
+  .Events {
+    font-size: 4vw;
   }
   .Events img {
     width: 60%;
