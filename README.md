@@ -1,0 +1,1 @@
+https://palettepalsosu.netlify.app/
